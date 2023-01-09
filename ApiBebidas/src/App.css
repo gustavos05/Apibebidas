@@ -1,0 +1,37 @@
+
+.card{
+  width: 250px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: darkgray 5px 5px 2px ;
+  }
+
+.card img {
+  padding-top: 5px;
+  width: 80%;
+  border-radius: 5px;
+}
+.card h3{
+  text-align: left;
+  color: darkgrey;
+}
+.App{
+  gap: 10px;
+  margin: 0 auto;
+  width: 80%;
+  justify-content: center;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+.cardContainer{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
+.App form {
+margin: 0 auto;
+margin-top: 50px;
+margin-bottom: 50px;
+text-align: center;
+}
