@@ -34,12 +34,18 @@ function App() {
         <button type="submit">Buscar</button>
       </form>
       <div className='cardContainer'>
-      {  
-      dataDrinks.map((drinks, index) => (
+      {  dataDrinks ?
+      dataDrinks.sort((a,b)=>{
+        if(a.strDrink>b.strDrink){
+          return 1
+        }else if (a.strDrink<b.strDrink){
+          return -1
+        }else{return 0}
+      }).map((drinks, index) => (
         <Card
          key={`drinks-${index}`} 
          data={drinks} 
-        />))
+        />)) : <h2>No existe esta bebida</h2>
        }
         </div>
     </div>
